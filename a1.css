@@ -1,0 +1,99 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  background-image: url;
+  
+background: url('https://img.freepik.com/free-vector/futuristic-technology-background_23-2148460426.jpg?semt=ais_hybrid&w=740&q=80') no-repeat center center/cover;
+}
+
+/* Glass ka Effect */
+.login-box {
+    width: 500px;
+    padding: 50px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+}
+
+/* Input fields */
+.input-box {
+    position: relative;
+    margin: 20px 0;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    color: white;
+}
+
+.input-box label {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+/* Floating label */
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -10px;
+    font-size: 12px;
+}
+
+/* Options */
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.options a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 20px;
+    background: white;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Register text */
+p {
+    font-size: 12px;
+}
+
+p a {
+    color: white;
+    text-decoration: underline;
+}
